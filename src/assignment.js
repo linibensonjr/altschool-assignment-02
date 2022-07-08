@@ -34,7 +34,7 @@ assignment.sumOfNumbers = sumOfNumbers;
 function countEvenNumbers(arrayOfNumbers) {
     let countEven = 0
     for (let number = 0; number < arrayOfNumbers.length; number++) {
-      while (arrayOfNumbers[number] % 2 == 0) {
+      if (arrayOfNumbers[number] % 2 == 0) {
         countEven += 1
       }
     }
